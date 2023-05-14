@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/http/ItTookaQuarry.github.io/Quizapp/static/css/main.2ae44673.css",
+    "main.js": "/http/ItTookaQuarry.github.io/Quizapp/static/js/main.363d5b06.js",
+    "index.html": "/http/ItTookaQuarry.github.io/Quizapp/index.html",
+    "main.2ae44673.css.map": "/http/ItTookaQuarry.github.io/Quizapp/static/css/main.2ae44673.css.map",
+    "main.363d5b06.js.map": "/http/ItTookaQuarry.github.io/Quizapp/static/js/main.363d5b06.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2ae44673.css",
+    "static/js/main.363d5b06.js"
+  ]
+}

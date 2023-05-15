@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/http/ItTookaQuarry.github.io/static/css/main.2ae44673.css",
-    "main.js": "/http/ItTookaQuarry.github.io/static/js/main.07583f8f.js",
+    "main.js": "/http/ItTookaQuarry.github.io/static/js/main.bef3ed5d.js",
     "index.html": "/http/ItTookaQuarry.github.io/index.html",
     "main.2ae44673.css.map": "/http/ItTookaQuarry.github.io/static/css/main.2ae44673.css.map",
-    "main.07583f8f.js.map": "/http/ItTookaQuarry.github.io/static/js/main.07583f8f.js.map"
+    "main.bef3ed5d.js.map": "/http/ItTookaQuarry.github.io/static/js/main.bef3ed5d.js.map"
   },
   "entrypoints": [
     "static/css/main.2ae44673.css",
-    "static/js/main.07583f8f.js"
+    "static/js/main.bef3ed5d.js"
   ]
 }

@@ -2,8 +2,6 @@ import "./App.css";
 import React from "react";
 import FirstPage from "./components/FirstPage";
 import SecondPage from "./components/SecondPage";
-import { isClickableInput } from "@testing-library/user-event/dist/utils";
-import { tab } from "@testing-library/user-event/dist/tab";
 import Thirdpage from "./components/Thirdpage";
 function App() {
   const [question, setQuestions] = React.useState([]);

@@ -1,13 +1,13 @@
 import React from "react";
 import { decode } from "html-entities";
-import { encode } from "html-entities";
+
 export default function Secondpage(props) {
 
 
   let tab = [...props.incorrect, props.correct];
 
-  const [Answers, sAnswers] = React.useState(() => {
-    {
+  const [Answers] = React.useState(() => {
+    
       for (let i = 0; i < tab.length; i++) {
         let random = Math.floor(Math.random() * tab.length - 1);
         let spliced = tab.splice(random, 1);
@@ -15,7 +15,7 @@ export default function Secondpage(props) {
       }
       let answers = [];
       for (let i = 0; i < tab.length; i++) {
-        let iscorrect = tab[i] == props.correct ? true : false;
+        let iscorrect = tab[i] === props.correct ? true : false;
 
         let obj = {
           answer: tab[i],
@@ -25,14 +25,14 @@ export default function Secondpage(props) {
         answers.push(obj);
       }
       return answers;
-    }
+    
   });
 
   let a = Answers.map((each, index) => {
 
 
     let c =
-      props.clicked[props.id][index] == false
+      props.clicked[props.id][index] === false
         ? { backgroundColor: "white",
         borderRadius: "7.94239px", 
        }

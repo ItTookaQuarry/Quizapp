@@ -19,7 +19,7 @@ function App() {
   const [third, setthird] = React.useState(false);
 
   function toggle() {
-    if (question.length != 0) {
+    if (question.length !== 0) {
       isclicked(() => {
         const tab = [];
         for (let i = 0; i < question.results.length; i++) {
@@ -52,24 +52,24 @@ function App() {
   ]);
 
   for (let i = 0; i < UserCurrentAnswers.length; i++) {
-    if (third == true) {
+    if (third === true) {
       break;
     }
-    if (submit == true) {
+    if (submit === true) {
       break;
     }
-    if (UserCurrentAnswers[i].length == 0) {
+    if (UserCurrentAnswers[i].length === 0) {
       break;
     }
-    if (i == UserCurrentAnswers.length - 1) {
+    if (i === UserCurrentAnswers.length - 1) {
       setsubmit(true);
     }
   }
 
   function change(index, secondindex, answers, question) {
     const tab = answers.map((each) => {
-      let correct = answers.indexOf(each) == index ? true : false;
-      if (answers.indexOf(each) == answers.length - 1) {
+      let correct = answers.indexOf(each) === index ? true : false;
+      if (answers.indexOf(each) === answers.length - 1) {
         return { ...each, isclicked: correct, question: question };
       }
       return { ...each, isclicked: correct };
@@ -94,7 +94,7 @@ function App() {
           table[secondindex][i] = false;
         }
 
-        if (i == index) {
+        if (i === index) {
           table[secondindex][i] = true;
         }
       }
@@ -113,7 +113,7 @@ function App() {
     const current = UserCurrentAnswers.map((each) => {
       let tab = [];
       for (let i = 0; i < each[0].length; i++) {
-        if (each[0][i].correct==true&&each[0][i].isclicked==true) {
+        if (each[0][i].correct===true&&each[0][i].isclicked===true) {
           tab.push(1);
         }
         
@@ -126,7 +126,7 @@ console.log(current)
       let number=prev
 
       for(let i=0;i<current.length;i++){
-        if(current[i].length==1){
+        if(current[i].length===1){
           number = number +1
        }
 
@@ -177,7 +177,7 @@ return number
            Try again
           </button></div>
         )}
-        <img src="blob3.png" className="second" />
+        <img src="blob3.png" className="second" alt=""/>
         {submit && (
           <button className="button" onClick={thirdpage}>
             Check answers

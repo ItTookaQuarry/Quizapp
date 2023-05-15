@@ -7,23 +7,23 @@ const answers=props.answers[0]
 const showanswers=answers.map((each,index)=>{
 
 
-let style=""
+let style={backgroundColor:"black"}
 
-    if(each.correct==true&&each.isclicked==true){
+    if(each.correct===true&&each.isclicked===true){
 
      style={backgroundColor: "#94D7A2" ,
        border:"0px solid black",
        borderRadius: "7.94239px",
        }
     }
-    if(each.correct==true&&each.isclicked==false){
+    if(each.correct===true&&each.isclicked===false){
 
   style={backgroundColor: "#94D7A2" ,
         border:"0px solid black",
         borderRadius: "7.94239px",
         }
      }
-     if(each.correct==false&&each.isclicked==true){
+     if(each.correct===false&&each.isclicked===true){
 
         style={backgroundColor: "#F8BCBC" ,
         border:"0px solid black",
@@ -31,7 +31,7 @@ let style=""
         }
      }
  
-     if(each.correct==false&&each.isclicked==false){
+     if(each.correct===false&&each.isclicked===false){
 
        style={backgroundColor: "white" ,
         borderRadius: "7.94239px",

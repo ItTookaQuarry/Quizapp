@@ -6,10 +6,14 @@ import Thirdpage from "./components/Thirdpage";
 function App() {
   const [question, setQuestions] = React.useState([]);
 
-  React.useState(() => {
+
+
+
+  React.useEffect(() => {
     fetch("https://opentdb.com/api.php?amount=5")
       .then((res) => res.json())
       .then((json) => {
+        console.log(json)
         setQuestions(json);
       });
   }, []);
